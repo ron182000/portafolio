@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronald Avilés M. — Ingeniero Civil, Saneamiento</title>
-<meta name="description" content="Portafolio de Ronald Avilés M., Ingeniero Civil con mención en Saneamiento. Herramientas, proyectos y análisis en agua, saneamiento e infraestructura.">
+<title>Centro de Impresiones — Ronald Avilés M.</title>
+<meta name="description" content="Herramienta para imprimir múltiples archivos de Excel de forma rápida, sin necesidad de abrir y cerrar cada ventana manualmente.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -336,6 +336,28 @@
     .grid{grid-template-columns:1fr;}
     .contact-big a{font-size:22px;}
   }
+
+  /* ---------- Detalle de proyecto (agregado mínimo) ---------- */
+  .back-link{
+    font-family:"Space Grotesk", sans-serif;
+    font-size:14.5px;
+    text-decoration:none;
+    display:inline-block;
+    margin:0 0 22px;
+  }
+  .ph-img{
+    border:1.5px dashed var(--brass);
+    background:var(--paper-alt);
+    color:var(--ink-soft);
+    font-family:"Space Grotesk", sans-serif;
+    font-size:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    aspect-ratio:16/9;
+    margin:0 0 14px;
+  }
 </style>
 </head>
 <body>
@@ -344,168 +366,81 @@
 
   <header>
     <div class="wrap">
-      <a class="monogram" href="#top">
+      <a class="monogram" href="../index.html#top">
         <span class="monogram-mark">RA</span>
         Ronald Avilés M.
       </a>
       <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="../index.html#sobre-mi">Sobre mí</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <section class="hero" id="top">
     <div class="wrap hero-inner">
-      <p class="tag"><span class="rule"></span>Cochabamba, Bolivia</p>
-      <h1 class="name">Ronald Avilés M.</h1>
-      <p class="role">Ingeniero Civil — mención Saneamiento</p>
-      <p class="lede">Diseño y gestión de sistemas de agua y saneamiento, con especial interés en soluciones sostenibles para el bienestar de las comunidades. Formado en la Universidad Mayor de San Simón.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn" href="#contacto">Escribirme</a>
-      </div>
+      <p style="margin:0 0 6px;"><a class="back-link" href="../index.html#proyectos">← Volver a proyectos</a></p>
+      <p class="tag"><span class="rule"></span>Lámina 07 · Excel · VBA</p>
+      <h1 class="name" style="font-size:clamp(32px, 5vw, 54px);">Centro de Impresiones</h1>
+      <p class="lede">Herramienta para imprimir múltiples archivos de Excel de forma rápida, sin necesidad de abrir y cerrar cada ventana manualmente.</p>
     </div>
   </section>
 
-  <section id="sobre-mi">
+  <section id="descripcion">
     <div class="wrap">
       <div class="section-head">
         <span class="section-num">01</span>
-        <h2 class="section-title">Sobre mí</h2>
+        <h2 class="section-title">Descripción</h2>
       </div>
       <div class="section-body">
         <div class="col">
-          <p>Soy Licenciado en Ingeniería Civil por la Universidad Mayor de San Simón, con mención en Saneamiento. Me interesa el diseño y la gestión de sistemas de agua y saneamiento, así como el desarrollo de soluciones sostenibles para el bienestar de las comunidades.</p>
-          <p>Estoy motivado para aprender y crecer profesionalmente en el campo de la construcción y la ingeniería civil, combinando herramientas de cálculo, programación y análisis de datos con la práctica de la ingeniería sanitaria.</p>
-          <p class="contact-inline">¿Quieres mi CV? Escríbeme a <a href="mailto:ronaldaviles.bol@gmail.com">ronaldaviles.bol@gmail.com</a> y te lo envío con gusto.</p>
+          <p style="max-width:660px;">Herramienta para imprimir múltiples archivos de Excel de forma rápida, sin necesidad de abrir y cerrar cada ventana manualmente.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="proyectos">
+  <section id="detalles">
     <div class="wrap">
       <div class="section-head">
         <span class="section-num">02</span>
-        <h2 class="section-title">Proyectos y herramientas</h2>
+        <h2 class="section-title">Detalles</h2>
       </div>
       <div class="section-body">
-        <div class="col" style="grid-column:1 / -1;">
-          <div class="grid">
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 01</span>
-                <span class="card-tag">Excel · VBA</span>
-              </div>
-              <h3>Conversor de unidades imperiales e internacionales</h3>
-              <p>Ante la fuerte presencia de normativas estadounidenses (como la ACI) en la práctica latinoamericana, desarrollé este complemento para convertir unidades imperiales e internacionales directamente en Excel, desde una sola celda hasta matrices completas.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-conversor-unidades.html">Ver detalle →</a>
-                <a href="https://drive.google.com/file/d/1OPv260FJWxTTpLWpjnrwibXnUZ__Rmqk/view?usp=sharing" target="_blank" rel="noopener">Descargar complemento (.xlam)</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 02</span>
-                <span class="card-tag">Excel · VBA</span>
-              </div>
-              <h3>Complemento "Hidrología"</h3>
-              <p>Optimiza el análisis de datos hidrológicos: procesa series de precipitación diaria del SENAMHI y de POWER NASA, e incluye funciones de análisis estadístico, detección de outliers y curvas de doble masa para comparar estaciones.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-complemento-hidrologia.html">Ver detalle →</a>
-                <a href="https://drive.google.com/file/d/1HqHwnTfc6jG19ysL8t3DtiAw2j0gDTwt/view?usp=drive_link" target="_blank" rel="noopener">Descargar complemento (.xlam)</a>
-                <a href="https://drive.google.com/file/d/1ZrIQFdP7vEzzVT28GRJzJwRcpFwkt8jb/view?usp=sharing" target="_blank" rel="noopener">Guía de uso</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 03</span>
-                <span class="card-tag">AutoCAD · AutoLISP</span>
-              </div>
-              <h3>AutoLISP para instalaciones hidrosanitarias</h3>
-              <p>Automatiza el acotado de instalaciones hidrosanitarias y genera una tabla resumen con todos los elementos del sistema de tuberías. Incluye una rutina adicional para colocar nodos de forma rápida.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-autolisp-hidrosanitarias.html">Ver detalle →</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 04</span>
-                <span class="card-tag">RStudio · QGIS · HEC-RAS</span>
-              </div>
-              <h3>Riesgo de inundaciones — cuenca Chocaya</h3>
-              <p>Análisis del riesgo de inundaciones bajo escenarios de cambio climático en la cuenca Chocaya, combinando RStudio, QGIS, HEC-HMS y HEC-RAS.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-riesgo-inundaciones-chocaya.html">Ver detalle →</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 05</span>
-                <span class="card-tag">Excel · FAO</span>
-              </div>
-              <h3>Riego tecnificado por aspersión</h3>
-              <p>Diseño hidráulico y agronómico de un sistema de riego tecnificado por aspersión, con una plantilla de Excel basada en el manual de diseño para sistemas de miniriego de la FAO.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-riego-tecnificado-aspersion.html">Ver detalle →</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 06</span>
-                <span class="card-tag">LaTeX · IA</span>
-              </div>
-              <h3>Gem "PDC — Plan de Desarrollo Curricular"</h3>
-              <p>Asistente para apoyar la redacción de Planes de Desarrollo Curricular, con documentos elaborados en LaTeX.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-pdc-plan-desarrollo-curricular.html">Ver detalle →</a>
-                <a href="https://texstudio.org/#home" target="_blank" rel="noopener">TexStudio (editor LaTeX)</a>
-                <a href="https://drive.google.com/file/d/144SWqtB6EjYu3oMSnQ-VGdHfDCotbDKe/view?usp=sharing" target="_blank" rel="noopener">Ejemplo de ingreso de datos</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-top">
-                <span class="card-sheet">Lámina 07</span>
-                <span class="card-tag">Excel · VBA</span>
-              </div>
-              <h3>Centro de Impresiones</h3>
-              <p>Herramienta para imprimir múltiples archivos de Excel de forma rápida, sin necesidad de abrir y cerrar cada ventana manualmente.</p>
-              <div class="card-links">
-                <a href="proyectos/proyecto-centro-impresiones.html">Ver detalle →</a>
-                <a href="https://drive.google.com/file/d/1vwEKG2u01jOV6YAJHpvWeZbwysQZMYVX/view?usp=sharing" target="_blank" rel="noopener">Descargar herramienta</a>
-              </div>
-            </div>
-
-          </div>
+        <div class="col">
+          <p style="max-width:660px;">Contenido en preparación — acá va la descripción ampliada del proyecto.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contacto">
+  <section id="galeria">
     <div class="wrap">
       <div class="section-head">
         <span class="section-num">03</span>
-        <h2 class="section-title">Trabajemos juntos</h2>
+        <h2 class="section-title">Galería</h2>
       </div>
       <div class="section-body">
         <div class="col">
-          <div>
-            <p class="contact-label">Correo</p>
-            <div class="contact-big"><a href="mailto:ronaldaviles.bol@gmail.com">ronaldaviles.bol@gmail.com</a></div>
-          </div>
-          <div>
-            <p class="contact-label">Teléfono</p>
-            <div class="contact-big"><a href="tel:+59165383226">+591 65383226</a></div>
+          <!-- Para usar una imagen real, sustituye una caja .ph-img por: <img src="../assets/NOMBRE.jpg" alt="..."> -->
+          <div class="ph-img">Espacio para imagen</div>
+          <div class="ph-img">Espacio para imagen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enlaces">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Enlaces</h2>
+      </div>
+      <div class="section-body">
+        <div class="col">
+          <div class="card-links">
+            <a href="https://drive.google.com/file/d/1vwEKG2u01jOV6YAJHpvWeZbwysQZMYVX/view?usp=sharing" target="_blank" rel="noopener">Descargar herramienta</a>
           </div>
         </div>
       </div>
@@ -514,8 +449,8 @@
 
   <footer>
     <div class="wrap">
-      <span>Ronald Avilés M. — Ingeniero Civil</span>
-      <span>Cochabamba, Bolivia</span>
+      <span><a class="back-link" href="../index.html#proyectos" style="margin:0;">← Volver a proyectos</a></span>
+      <span>Ronald Avilés M. — Ingeniero Civil · Cochabamba, Bolivia</span>
     </div>
   </footer>
 
