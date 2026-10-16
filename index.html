@@ -131,15 +131,10 @@
   }
   .hero-inner{
     padding:88px 0 96px 48px;
-    display:flex;
-    gap:44px;
-    align-items:center;
-    justify-content:space-between;
   }
-  .hero-text{flex:1;min-width:0;}
   .hero-photo{
     flex:none;
-    width:230px;
+    width:280px;
     margin:0;
     padding:8px;
     background:var(--paper);
@@ -148,7 +143,7 @@
   }
   .hero-photo img{
     width:100%;
-    height:280px;
+    height:340px;
     object-fit:cover;
     object-position:top center;
     display:block;
@@ -161,6 +156,14 @@
     text-align:center;
     padding:8px 4px 2px;
   }
+  .about-layout{
+    display:flex;
+    gap:36px;
+    align-items:flex-start;
+    justify-content:space-between;
+  }
+  .about-text{flex:1;min-width:0;}
+  .about-text p{max-width:660px;}
   .hero .tag{
     font-family:"Space Grotesk", sans-serif;
     font-size:13.5px;
@@ -358,8 +361,9 @@
     .wrap{padding:0 28px;}
     header .wrap{height:58px;}
     nav{gap:16px;}
-    .hero-inner{padding:56px 0 64px 8px;flex-direction:column;align-items:flex-start;}
-    .hero-photo{width:200px;}
+    .hero-inner{padding:56px 0 64px 8px;}
+    .hero-photo{width:220px;}
+    .about-layout{flex-direction:column;}
     .section-head, .section-body{
       grid-template-columns:1fr;
     }
@@ -392,7 +396,6 @@
 
   <section class="hero" id="top">
     <div class="wrap hero-inner">
-      <div class="hero-text">
       <p class="tag"><span class="rule"></span>Cochabamba, Bolivia</p>
       <h1 class="name">Ronald Avilés M.</h1>
       <p class="role">Ingeniero Civil</p>
@@ -401,11 +404,6 @@
         <a class="btn primary" href="#proyectos">Ver proyectos</a>
         <a class="btn" href="#contacto">Escribirme</a>
       </div>
-      </div>
-      <figure class="hero-photo">
-        <img src="assets/fotografia.jpeg" alt="Fotografía de Ronald Avilés M.">
-        <figcaption>Ronald Avilés M.</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -417,9 +415,17 @@
       </div>
       <div class="section-body">
         <div class="col">
+          <div class="about-layout">
+          <div class="about-text">
           <p>Convierto tareas repetitivas de ingeniería en herramientas que ahorran horas: complementos de Excel que procesan series hidrológicas, descargan datos climáticos satelitales, grafican coordenadas o convierten unidades, y rutinas de AutoCAD que automatizan el dibujo de instalaciones hidrosanitarias.</p>
           <p>Combino cálculo, programación y análisis de datos con criterio de ingeniería sanitaria: del riesgo de inundaciones al diseño de riego tecnificado, entrego soluciones prácticas y sostenibles para las comunidades. Soy ingeniero civil formado en la Universidad Mayor de San Simón y creador de <a href="https://youtube.com/@aquabol-cbba?si=gkk67MgecRS6woEV" target="_blank" rel="noopener">Aquabol</a>, un canal de YouTube donde comparto herramientas y conocimiento de ingeniería, que aspira a consolidarse como una empresa de servicios de ingeniería.</p>
           <p class="contact-inline">¿Quieres mi CV? Escríbeme a <a href="mailto:ronaldaviles.bol@gmail.com">ronaldaviles.bol@gmail.com</a> y te lo envío con gusto.</p>
+          </div>
+          <figure class="hero-photo">
+            <img src="assets/fotografia-perfil.png" alt="Fotografía de Ronald Avilés M.">
+            <figcaption>Ronald Avilés M.</figcaption>
+          </figure>
+          </div>
         </div>
       </div>
     </div>
