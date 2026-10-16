@@ -131,6 +131,35 @@
   }
   .hero-inner{
     padding:88px 0 96px 48px;
+    display:flex;
+    gap:44px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .hero-text{flex:1;min-width:0;}
+  .hero-photo{
+    flex:none;
+    width:230px;
+    margin:0;
+    padding:8px;
+    background:var(--paper);
+    border:1px solid var(--brass);
+    box-shadow:6px 6px 0 var(--paper-alt);
+  }
+  .hero-photo img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    object-position:top center;
+    display:block;
+    border:1px solid var(--line);
+  }
+  .hero-photo figcaption{
+    font-family:"Space Grotesk", sans-serif;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    text-align:center;
+    padding:8px 4px 2px;
   }
   .hero .tag{
     font-family:"Space Grotesk", sans-serif;
@@ -329,7 +358,8 @@
     .wrap{padding:0 28px;}
     header .wrap{height:58px;}
     nav{gap:16px;}
-    .hero-inner{padding:56px 0 64px 8px;}
+    .hero-inner{padding:56px 0 64px 8px;flex-direction:column;align-items:flex-start;}
+    .hero-photo{width:200px;}
     .section-head, .section-body{
       grid-template-columns:1fr;
     }
@@ -362,6 +392,7 @@
 
   <section class="hero" id="top">
     <div class="wrap hero-inner">
+      <div class="hero-text">
       <p class="tag"><span class="rule"></span>Cochabamba, Bolivia</p>
       <h1 class="name">Ronald Avilés M.</h1>
       <p class="role">Ingeniero Civil</p>
@@ -370,6 +401,11 @@
         <a class="btn primary" href="#proyectos">Ver proyectos</a>
         <a class="btn" href="#contacto">Escribirme</a>
       </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/fotografia.jpeg" alt="Fotografía de Ronald Avilés M.">
+        <figcaption>Ronald Avilés M.</figcaption>
+      </figure>
     </div>
   </section>
 
