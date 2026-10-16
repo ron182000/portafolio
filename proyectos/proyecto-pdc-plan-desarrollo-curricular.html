@@ -420,10 +420,42 @@
     </div>
   </section>
 
-  <section id="enlaces">
+  <section id="videos">
     <div class="wrap">
       <div class="section-head">
         <span class="section-num">03</span>
+        <h2 class="section-title">Videos</h2>
+      </div>
+      <div class="section-body">
+        <div class="col">
+          <div style="position:relative;aspect-ratio:16/9;margin:0 0 8px;border:1px solid var(--line);overflow:hidden;background:#000;"><iframe src="https://www.youtube.com/embed/I4q7uxr-QwI?rel=0" title="Video del Gem generador de PDC" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:13.5px;color:var(--ink-soft);margin:0 0 6px;">Demostración del Gem generador de Planes de Desarrollo Curricular.</p>
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:14px;margin:0;"><a href="https://www.youtube.com/watch?v=I4q7uxr-QwI" target="_blank" rel="noopener">Ver video en YouTube →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prompt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Prompt del Gem</h2>
+      </div>
+      <div class="section-body">
+        <div class="col">
+          <p style="max-width:660px;">Copiá este prompt en Gemini para crear tu Gem generador de PDC.</p>
+          <div style="border:1px solid var(--line);background:var(--paper-alt);padding:14px;"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:var(--ink-soft);">prompt-gem-pdc.txt</span><button id="btn-copiar-prompt" type="button" class="btn" style="padding:8px 16px;cursor:pointer;">Copiar prompt</button></div><pre id="pdc-prompt" style="white-space:pre-wrap;word-break:break-word;font-size:13px;line-height:1.5;max-height:420px;overflow:auto;margin:0;background:transparent;border-top:1px solid var(--line);padding-top:12px;">Cargando prompt…</pre><p id="prompt-status" style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:var(--ink-soft);margin:8px 0 0;"></p></div>
+          <script>(function(){var pre=document.getElementById('pdc-prompt'),btn=document.getElementById('btn-copiar-prompt'),st=document.getElementById('prompt-status'),cache='';fetch('../assets/pdc-plan-desarrollo-curricular/prompt-gem-pdc.txt').then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();}).then(function(t){cache=t;pre.textContent=t;}).catch(function(){pre.textContent='No se pudo cargar el prompt. Descargalo desde Enlaces.';});btn.addEventListener('click',function(){function ok(){st.textContent='¡Prompt copiado al portapapeles!';btn.textContent='¡Copiado!';setTimeout(function(){btn.textContent='Copiar prompt';},2000);}function fail(){st.textContent='No se pudo copiar. Seleccioná el texto manualmente.';}if(!cache){fail();return;}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(cache).then(ok,fail);}else{var ta=document.createElement('textarea');ta.value=cache;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok();}catch(e){fail();}document.body.removeChild(ta);}});})();</script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enlaces">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">05</span>
         <h2 class="section-title">Enlaces</h2>
       </div>
       <div class="section-body">
